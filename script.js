@@ -60,9 +60,9 @@ const applyFilter = filter => {
 				imgData[i + 2] = avgValue;
 				break;
 			case 'monotone':
-				imgData[i] = avgValue;
-				imgData[i + 1] = avgValue;
-				imgData[i + 2] = avgValue;
+				imgData[i] = avgValue - 40;
+				imgData[i + 1] = avgValue - 40;
+				imgData[i + 2] = avgValue + 80;
 				break;
 			case 'duotone':
 				const diff = Math.round((128 / 100) * avgValue);
